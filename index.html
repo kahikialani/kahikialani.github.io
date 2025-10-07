@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Orion Marini Portfolio</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://kahikialani.github.io" class="link"
+          >OM</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#education">Education</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>My name is<span class="about__name"> Orion Marini.</span></h1>
+        <p class="about__desc">
+          I am a recent graduate with a degree in Statistics and Data Science from UC: Santa Barbara,
+          pursuing a career in software engineering and data science. Over the past few years, I have
+          worked in data analytics, where I developed models, built pipelines, and translated 
+          complex data into insights that shaped real decisions within the event industry.
+          I enjoy bridging the gap between analytics and AI. 
+          Whether that's using Python, R, and SQL to wrangle large datasets or 
+          applying machine learning to solve real-world problems. 
+          I am excited to keep growing as a developer and 
+          contribute to teams that value curiosity, collaboration, and impact.
+        </p>
+
+        <div class="about__contact center">
+          <a href="https://drive.google.com/file/d/1Jf36pqyFUP8njL5IdeaN5ZckHHd_LhIX/view?usp=sharing">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/kahikialani"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/orion-marini808"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+          <div class="project">
+            <h3>RouteGuessr - "GeoGuessr" Styled Web Application</h3>
+            <p class="project__description">
+            "RouteGuessr" is a game that I designed with the goal of fullfilling the idea I have always had of
+            a minigame designed to guess the location of rock climbing routes. For this project, I am the sole developer
+            for all elements of the deployment. I built a foundational web service using Flask along with 
+            various other libraries. An AWS PostgreSQL server hosts roughly 25,000 data entries. As for the front end, I fully developed HTML / CSS / JavaScript elements including using Google Maps API
+            and Google OAuth for user integration.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Flask</li>
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">PostgreSQL</li>
+            </ul>
+
+            <a
+              href="https://github.com/kahikialani/RouteGuessr"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://routeguessr.onrender.com/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Handwriting Recognition Neural Network</h3>
+            <p class="project__description">
+            Built a CRNN in PyTorch with CTC loss to recognize handwritten names,
+             achieving 85% accuracy on 330K+ samples. Designed preprocessing, CNN feature extraction,
+              bidirectional LSTMs, and custom data loaders for efficient large-scale training and evaluation.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">PyTorch</li>
+              <li class="project__stack-item">SQL</li>
+              <li class="project__stack-item">CRNN</li>
+            </ul>
+
+            <a
+              href="https://github.com/kahikialani/Handwriting-Neural-Network"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://github.com/kahikialani/Handwriting-Neural-Network"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>CAL FIRE Analytics Pipeline</h3>
+            <p class="project__description">
+            Built a Python + SQL pipeline processing 3,200+ 
+            CAL FIRE incidents, including data cleaning, validation,
+            and SQLite storage. Created Tableau dashboards and statistical analyses
+            revealing seasonal wildfire patterns, and engineered a workflow supporting
+            predictive modeling for fire risk assessment.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Scikit-learn</li>
+              <li class="project__stack-item">SQL</li>
+              <li class="project__stack-item">Pandas</li>
+              <li class="project__stack-item">Tableau</li>
+            </ul>
+
+            <a
+              href="https://github.com/kahikialani/calfire_analytics"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://github.com/kahikialani/calfire_analytics"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Quantifying Rock Climbing Ability with ML</h3>
+            <p class="project__description">
+            Built multiple predictive models in R to estimate climbing performance from user metrics,
+            including Random Forests, SVM, k-NN, and LDA, achieving 75% test accuracy.
+            Cleaned and preprocessed public survey data, implemented 10-fold cross-validation,
+            and developed an interactive interface to visualize how strength metrics influence climbing grades.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">R</li>
+              <li class="project__stack-item">tidyverse</li>
+              <li class="project__stack-item">caret</li>
+              <li class="project__stack-item">MASS</li>
+              <li class="project__stack-item">PowerBI</li>
+            </ul>
+
+            <a
+              href="https://github.com/kahikialani/Climbing-Analysis"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://kahikialani.github.io/Climbing-Analysis/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <div class="project">
+            <h3>Forecasting Spotify Interest</h3>
+            <p class="project__description">
+            Analyzed 13 years of Google Trends data in R to model and forecast Spotify search popularity.
+             Built a SARIMA(2,1,1)x(1,0,0) model achieving 89% forecast accuracy, complemented with GARCH 
+             modeling to capture volatility patterns. Identified cyclical peaks every 12/15 months and visualized
+            long-term trends, providing actionable insights for strategic planning in music streaming analytics.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">R Programming</li>
+              <li class="project__stack-item">forecast</li>
+              <li class="project__stack-item">ggplot2</li>
+              <li class="project__stack-item">tseries</li>
+              <li class="project__stack-item">rugarch</li>
+            </ul>
+
+            <a
+              href="https://github.com/kahikialani/Time-Series-Forecasting"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://kahikialani.github.io/Time-Series-Forecasting/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+<section class="section education" id="education">
+  <h2 class="section__title">Education</h2>
+  <div class="education__item">
+    <h3>University of California, Santa Barbara</h3>
+    <h4>B.S. Statistics and Data Science, June 2024</h4>
+  
+</section>
+
+      
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">R</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">Tableau</li>
+          <li class="skills__list-item btn btn--plain">Power BI</li>
+          <li class="skills__list-item btn btn--plain">Excel</li>
+          <li class="skills__list-item btn btn--plain">Docker</li>
+          <li class="skills__list-item btn btn--plain">AWS</li>
+          <li class="skills__list-item btn btn--plain">Scikit-learn</li>
+          <li class="skills__list-item btn btn--plain">PyTorch</li>
+          <li class="skills__list-item btn btn--plain">PostgreSQL</li>
+          <li class="skills__list-item btn btn--plain">Flask</li>
+          <li class="skills__list-item btn btn--plain">Streamlit</li>
+          <li class="skills__list-item btn btn--plain">BigQuery</li>
+          <li class="skills__list-item btn btn--plain">Google Cloud</li>
+          <li class="skills__list-item btn btn--plain">Deep Learning</li>
+          <li class="skills__list-item btn btn--plain">Machine Learning</li>
+          <li class="skills__list-item btn btn--plain">NLP</li>
+          <li class="skills__list-item btn btn--plain">Data Visualization</li>
+          <li class="skills__list-item btn btn--plain">Statistics</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:orionmarini@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
