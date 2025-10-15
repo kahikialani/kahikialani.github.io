@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORION MARINI - PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/[ OM ].png">
+
+</head>
+    <body>
+        <header>
+            <div class="logo">
+                <span id="typed-text"></span><span id="cursor" class="cursor">|</span>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Project</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Intro -->
+         <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Orion Marini</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Developer & Data Scientist</p>
+            <img src="images/432A2570.jpg" alt="Picture of me" class="intro__img">
+         </section>
+
+         <!-- What i do-->
+         <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do.</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>DATA SCIENCE</h3>    
+                    <p>From exploratory data analysis to modeling, I have experience applying my knowledge of statistical and machine learning methods to solve real-world problems. My academic training has culminated in a deep skillset, broadened further by my various Data Science projects. My work includes projects like wildfire trend analytics, climbing performance prediction, and building neural networks for handwriting recognition. </p>
+                    
+                </div>
+
+                <div class="service">
+                    <h3>SOFTWARE ENGINEERING</h3>
+                    <p>With a deep understanding of Python, I've engineered full-stack solutions that bridge back-end data processing / analytics, APIs, and intuitive front-end experiences. I have experience building Flask and Streamlit webservices from the ground up, crafting ETL pipelines with PostgreSQL and Pythom and deploying production-level software using Docker and cloud tools like Snowflake, Google Cloud, and AWS.</p>
+                </div>
+
+                <div class="service">
+                    <h3>ANALYTICS AND AI</h3>
+                    <p>I specialize in turning complex datasets into meaningful narratives and model-driven decsions. I’ve built analytics pipelines with GCP and PostgreSQL to connect CRM, booking, and survey data, then visualized it in Tableau to track trends and optimize marketing strategy. This work directly informed business decisions and improved performance, much like my current position which contributes toward ethical AI research by evaluating and contributing to LLMs for helpfulness, safety, and honesty. </p>
+                </div>
+            </div>
+            <a href="#work" class="btn">My Work</a>
+         </section>
+
+         <!-- About me-->
+        <section class="about-me__wrapper">
+            <div class="about-me" id="about">
+                <h2 class="section__title section__title--about">Who I am</h2>
+                <p class="section__subtitle section__subtitle--about">Developer and Data Scientist</p>
+            
+                <div class="about-me__body">
+                    <p>From an early age, I’ve always gravitated toward problem-solving and STEM, driven by a deep fascination with how systems work. That passion evolved naturally into my pursuit of a B.S. in Statistics and Data Science at the University of California, Santa Barbara, where I immersed myself in the rapidly changing landscape of AI and modern analytics. I’m a fast learner, analytical thinker, and detail-oriented problem solver who values understanding concepts from the ground up rather than taking shortcuts. Data science and software engineering have long captured my curiosity because they merge creativity with logic. I wish to be at the forefront of technology and production, and I want my work to have meaningful impact.</p>
+                    <p>This passion for problem-solving extends perhaps even deeper into my personal life. During the pandemic, I spent a majority of my time outside rock climbing near my home in Joshua Tree, California. The technical aspects of body, mind, and gear within the sport fascinated me immediately and will continue to for the rest of my life. The pure focus and determination that arises when rock climbing is incomparable, and I believe it is a litmus test that demonstrates my skills in those aspects. As of now, I rock climb at a near professional level, and I foresee that this passion will never conclude.</p>
+                </div>
+                <img src="images/asteroid.jpg" class="about-me__img" alt="Orion doing cool">
+            </div>
+        </section>
+
+         <!-- My Work-->
+        <section class="my-work" id="work">
+            <h2 class="section__title">My work.</h2>
+            <p class="section__subtitle">A selection of some of my current leading projects.</p>
+
+            <div class="portfolio">
+                <!-- portfolio item -->
+                <a href="https://routeguessr.onrender.com/" class="portfolio__item">
+                    <img src="images/routeguessr.png" class="portfolio__thumbnail" alt="">
+                    <div class="portfolio__content">
+                        <h1 class="portfolio__title">RouteGuessr</h1>
+                        <h2 class="portfolio__category">"GeoGuessr" Styled Web Application</h2>
+                        <p class="portfolio__description">
+                            Developed a full-stack web application inspired by GeoGuessr, designing and deploying a Flask-based Python backend that supports dynamic image serving, user session management, and real-time gameplay logic.
+                            Implemented large-scale data integration pipelines using BeautifulSoup4 and Requests to web-scrape and process over 50,000 records, storing them in a fully managed PostgreSQL database hosted on AWS for efficient querying and scalability. 
+                        </p>
+                        <p></p>
+                        <p class="portfolio__description">
+                            Integrated multiple Google Cloud APIs, including Gemini for LLM-powered text generation, Google Maps for geospatial visualiza-tion, and Google OAuth for secure user authentication and account management. 
+                            Designed an interactive frontend interface using HTML, CSS, and JavaScript elements to deliver a smooth, responsive gameplay experience, emphasizing usability, fast load times, and seamless communication with the Flask backend.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/kahikialani/calfire_analytics" class="portfolio__item">
+                    <img src="images/output.png" class="portfolio__thumbnail" alt="">
+                    <div class="portfolio__content">
+                        <h1 class="portfolio__title">CAL FIRE Analytics Pipeline</h1>
+                        <h2 class="portfolio__category">CONSTRUCTING DATA PIPELINES AND ANALYTICS PLATFORMS</h2>
+                        <p class="portfolio__description">Engineered an automated end-to-end ML data pipeline processing over 3,200 CAL FIRE wildfire incidents and California Department of Water Resources precipitation records, performing advanced feature engineering, data validation, and seamless database integration through Google Cloud SQL to support scalable predictive modeling. Developed and refined wildfire risk assessment models leveraging spatial clustering, seasonal decomposition, and time-series lag analysis with Scikit-learn, forecasting regional fire probabilities across California counties and visualizing dynamic trends through interactive Tableau dashboards and custom Streamlit interfaces.</p>
+                    </div>
+                </a>
+
+                <a href="https://kahikialani.github.io/Climbing-Analysis/" class="portfolio__item">
+                    <img src="images/image.png" class="portfolio__thumbnail" alt="">
+                    <div class="portfolio__content">
+                        <h1 class="portfolio__title">Quantifying Rock Climbing Ability</h1>
+                        <h2 class="portfolio__category">MACHINE LEARNING MODELS TO IMPACT HUMAN PERFORMANCE</h2>
+                        <p class="portfolio__description">Developed an interactive machine learning model in R to quantify rock climbing ability (V-grades) using physical and training metrics from 630 climbers, cleaning and engineering data through categorical encoding, regression-based imputation, and 10-fold cross-validation to ensure robust predictive performance. Trained, tuned, and compared multiple classification algorithms (LDA, KNN, Random Forest, SVM, Pruned Decision Trees), achieving an approx 85% training/testing accuracy, and integrated results into an interactive visualization interface that highlights key predictors influencing climbing difficulty and performance progression.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <a href="mailto:orionmarini@gmail.com" class="footer__link">orionmarini@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/orion-marini808/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/kahikialani">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/iamhikialani/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
